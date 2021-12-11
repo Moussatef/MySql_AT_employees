@@ -139,7 +139,7 @@ select salary from employees;
 select distinct job_name from employees;
 
 -- selectionner le nom des employés, augmenter leur salaire de 15 % et l'exprimer en nombre de dollars.
-select emp_name , salary+((salary * 15 ) / 100 ) as "salary after increase"  from employees ;
+select emp_name ,( salary +((salary * 15 ) / 100 ))+'$' as "salary after increase"  from employees ;
 -- #######
 
 -- selectionner sans répétition les noms des job et les noms des départements pour chaque job 
